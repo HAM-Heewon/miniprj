@@ -41,6 +41,11 @@
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.5</version>
 		</dependency>
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.16.1</version>
+</dependency>
 		<!-- lombok : DTO,VO (setter,getter) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
