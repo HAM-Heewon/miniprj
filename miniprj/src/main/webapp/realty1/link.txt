@@ -1,7 +1,38 @@
+메인
 http://mekeyace.dothome.co.kr/realty/realty1.zip
+로그인
 http://mekeyace.dothome.co.kr/realty/realty2.zip
+약관파일
 http://mekeyace.dothome.co.kr/realty/agree.zip
+기획서
 http://mekeyace.dothome.co.kr/realty/mini.pdf
 
+상세
 http://mekeyace.dothome.co.kr/realty/type_info.xlsx
 http://mekeyace.dothome.co.kr/realty/md_choice.xlsx
+
+
+테이블정보
+create table apart_info(
+aidx int signed auto_increment primary key,
+aname varchar(100) not null,
+addr varchar(200) not null,
+amenu char(10) not null,
+arent char(10) not null,
+arent_date varchar(40) not null,
+ain_date varchar(40) not null,
+aimg text null,
+aheat varchar(40) not null,
+ahouse varchar(8) not null,
+abuild char(2) not null,
+acompany varchar(100) not null,
+anow enum('오픈','접수') not null
+)
+
+create table md_choice(
+midx int signed auto_increment primary key,
+mtitle varchar(200) not null,
+mdetail varchar(200) not null,
+mimg text not null,
+mlink text not null
+)
